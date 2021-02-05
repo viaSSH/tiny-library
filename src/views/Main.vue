@@ -1,6 +1,6 @@
 <template>
   <div>
-    
+
     <!-- <BookLists :bookList="nowHaving"> </BookLists> -->
     <div class="d-flex flex-wrap" v-if="nowHaving">
       <BookText :text="'Now Having'"></BookText>
@@ -53,7 +53,7 @@ export default {
         // const[now, pop, up] = await Promise.all(
         //     requestArr.map(li => li().then((res) => res.data.results))
         // );
-        // this.SET_LOADING(false);
+        this.SET_LOADING(false);
         // this.nowPlaying = now;
         // this.popular = pop;
         // this.upComing = up;

@@ -1,6 +1,6 @@
 <template>
   <div v-if="bookList" class="d-flex flex-wrap">
-    <div v-for="li in bookList" class="movie-card" :key="li.id" style="width:125px;
+    <div v-for="li in bookList" class="movie-card" :key="li.id" style="width:250px;
 
         ">
       <!-- {{li}} -->
@@ -9,9 +9,9 @@
           v-if="li.image_path"
           :src="image(li.image_path)"
           fluid
-          style="width:125px; height:180px;"
+          style="width:250px; height:360px;"
         ></b-img>
-        <b-img v-else :src="noImage" fluid style="width:125px; height:180px;"></b-img>
+        <b-img v-else :src="noImage" fluid style="width:250px; height:360px;"></b-img>
         <div class="movie-information">
           <div class="movie-title">{{li.title}}</div>
           <!-- <div class="movie-date" v-if="li.release_date">{{ li.release_date.split("-")[0] }}</div> -->

@@ -7,6 +7,12 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
 
     <!-- <MainLayout /> -->
+    <b-spinner
+      v-if="loading"
+      class="d-block ml-auto mr-auto"
+      label="Spinning"
+    >
+    </b-spinner>
     <router-view/>
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>

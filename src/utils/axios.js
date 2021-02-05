@@ -17,7 +17,7 @@ const request = axios.create({
 
 export const movieApi = {
     nowHaving: () => request.get("books"),
-
+    bookDetail: (id) => request.get(`/books/${id}`),
 
 }
 
