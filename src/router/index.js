@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 // import Home from '../views/Home.vue'
 import Main from '../views/Main.vue'
 import BookDetail from '../views/BookDetail.vue'
-// import Search from '../views/Search.vue'
+import Search from '../views/Search.vue'
 // import MovieDetail from '../views/MovieDetail.vue'
 
 Vue.use(VueRouter)
@@ -18,12 +18,12 @@ Vue.use(VueRouter)
     path: '/detail/:id',
     name: 'Detail',
     component: BookDetail
-  }
-  // {
-  //   path: '/search',
-  //   name: 'Search',
-  //   component: Search
-  // },
+  },
+  {
+    path: '/search',
+    name: 'Search',
+    component: Search
+  },
   // {
   //   path: '/detail/:id',
   //   name: 'Detail',

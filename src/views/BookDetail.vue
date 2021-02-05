@@ -48,7 +48,7 @@
             </a>
           </div>
 
-          <div class="movie-overview mt-3">
+          <div class="movie-overview mt-3 d-flex align-items-center">
             {{bookDetail.overview}}
           </div>
           <!-- <div class="text-left mt-5" v-if="movieDetail.videos && movieDetail.videos.results">
@@ -155,8 +155,10 @@ export default {
     font-size: 20px;
   }
   .movie-overview{
-    max-width: 60%;
-    font-size: 14px;
+    padding-left: 36px;
+    margin-top: 20px;
+    /* max-width: 60%; */
+    font-size: 24px;
     color: #dddddd;
   }
   .homepage-link:hover{

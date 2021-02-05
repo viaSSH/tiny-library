@@ -1,6 +1,6 @@
 <template>
   <div>
-
+    <Search> </Search>
     <!-- <BookLists :bookList="nowHaving"> </BookLists> -->
     <div class="d-flex flex-wrap" v-if="nowHaving">
       <BookText :text="'Now Having'"></BookText>
@@ -25,13 +25,16 @@
 import { movieApi } from "../utils/axios";
 import BookLists from '../components/BookLists';
 import BookText from '../components/BookText';
+
+import Search from '../views/Search'
 // import MovieLists from "../components/MovieLists";
 // import MovieText from "../components/MovieText";
 import { mapMutations } from 'vuex';
 export default {
     components: {
       BookLists,
-      BookText
+      BookText,
+      Search
         // MovieLists,
         // MovieText
     },

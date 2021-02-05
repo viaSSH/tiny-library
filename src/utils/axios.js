@@ -11,14 +11,19 @@ import axios from "axios";
 const request = axios.create({
     baseURL: "https://o8zcxzilbd.execute-api.ap-northeast-2.amazonaws.com/v1/",
     params: {
-        api_key: "9db798875cd6e95d1d71e772df1dc878"
+        // api_key: "9db798875cd6e95d1d71e772df1dc878"
     }
 })
 
 export const movieApi = {
     nowHaving: () => request.get("books"),
     bookDetail: (id) => request.get(`/books/${id}`),
-
+    search: (keyword) =>
+        request.get("/search/books", {
+            params: {
+                query: keyword,
+            }
+        })
 }
 
 // export const movieApi = {
